@@ -1,24 +1,23 @@
+#imports and variabes
 from random import randint
-numeroAleatorio = int (randint (1,10))
+randomNumber = int (randint (1,10))
+bet = 0
+attempts = 0
 
-#Menu Inicial
-print("\n******************* Python Chute um Numero *******************")
-print("\nA sorte foi lançada, advinhe o numero:")
+#menu
+print("\n******************* Python Kick a Number *******************")
+print("\nThe lot has been cast, guess the number from 1 to 10:")
 
-chute = 0
-tentativas = 0
-
-while chute != numeroAleatorio:
-   chute = int(input('Dê o seu "chute": '))
-   tentativas += 1
-   if chute == numeroAleatorio:
-       print(('-'*25),'\nPARABÊNS','!!\n', 'você acertou com ', tentativas, 'tentativas') #'-'*25 faz repetir o caracter x25
-   elif chute < numeroAleatorio:
-       print('ERRADO!! chute um valor maior que', chute, '!')
+#loop
+while bet != randomNumber:
+   bet = int(input('Of your "kick": '))
+   attempts += 1
+   if bet == randomNumber:
+       print(('-'*25),'\nCONGRATULATIONS','!!\n', 'you got it right with ', attempts, ' tries')
+   elif bet < randomNumber:
+       print('WRONG!! you got it right with', bet, '!')
    else:
-       print('ERRADO!! chute um valor menor que',chute, '!')
+       print('WRONG!! guess a value less than',bet, '!')
 print('_'*25)
    
-print( '* Fim de jogo! *')
-    
-        
+print( '* End Game! *')
