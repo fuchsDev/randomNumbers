@@ -17,5 +17,5 @@ __________________________________________________
 
 #main2.py
 
-    It is a simulation game of "rolling the dice", it is asked if the user wants to make a move and then 
-    shows a result. The result is randomly generated from 1 to 6.
+    It is a simulation game of "rolling the dice", it is asked if the user wants to make a move 
+    and then shows a result. The result is randomly generated from 1 to 6.
